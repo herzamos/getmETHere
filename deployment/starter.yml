@@ -1,0 +1,17 @@
+programs:
+  - name: next-starter
+    path: /app/node_modules/.bin/next
+    workdir: /app
+    user: app-user
+    group: app-user
+    args:
+      - 'start'
+    env:
+      - SIP_INGRESS_HTTP_DEFAULT_DEPLOYMENT_DOMAIN:
+      - SIP_AUTH_OIDC_CLIENT_ID:
+      - SIP_AUTH_OIDC_CLIENT_SECRET:
+
+      - CLIENT_ID: '{{ SIP_AUTH_OIDC_CLIENT_ID }}'
+      - CLIENT_SECRET: '{{ SIP_AUTH_OIDC_CLIENT_SECRET }}'
+      - SECRET:
+      - NEXTAUTH_URL: 'https://{{ SIP_INGRESS_HTTP_DEFAULT_DEPLOYMENT_DOMAIN }}'

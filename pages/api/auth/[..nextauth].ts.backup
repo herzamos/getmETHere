@@ -1,0 +1,62 @@
+import NextAuth, { Profile } from "next-auth";
+import { OAuthConfig } from "next-auth/providers";
+
+interface Options {
+  id: string;
+  baseUrl: string;
+  realm: string;
+  clientId: string;
+  clientSecret: string;
+  name: string;
+  scope?: string;
+}
+
+const KeycloakProvider = ({
+  id,
+  baseUrl,
+  realm,
+  clientId,
+  clientSecret,
+  name,
+  scope = "openid",
+}: Options) => {
+  const config: OAuthConfig<Profile> = {
+    id,
+    name,
+    type: "oauth",
+    version: "2.0",
+    scope,
+    params: { grant_type: "authorization_code" },
+    accessTokenUrl: `${baseUrl}/auth/realms/${realm}/protocol/openid-connect/token`,
+    requestTokenUrl: `${baseUrl}/auth/realms/${realm}/protocol/openid-connect/auth`,
+    authorizationUrl: `${baseUrl}/auth/realms/${realm}/protocol/openid-connect/auth?response_type=code`,
+    profileUrl: `${baseUrl}/auth/realms/${realm}/protocol/openid-connect/userinfo`,
+    async profile(profile, _tokens) {
+      return {
+        id: profile.sub ?? "",
+        name: profile.name ?? "",
+        email: profile.sub ?? "",
+      };
+    },
+    clientId,
+    clientSecret,
+  };
+  return config;
+};
+
+export default NextAuth({
+  jwt: {
+    secret: process.env.SECRET,
+  },
+  providers: [
+    KeycloakProvider({
+      id: "vseth-keycloak",
+      baseUrl: "https://auth.vseth.ethz.ch",
+      clientId: process.env.CLIENT_ID ?? "",
+      clientSecret: process.env.CLIENT_SECRET ?? "",
+      name: "VSETH Keycloak",
+      realm: "VSETH",
+      scope: "openid",
+    }),
+  ],
+});

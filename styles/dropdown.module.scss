@@ -1,0 +1,28 @@
+@use 'variables';
+
+.Dropdown {
+	display: inline-block;
+	padding: 12px 20px;
+	color: white;
+	background-color: variables.$button !important;
+	border: none;
+	max-height: 100%;
+}
+
+h3.DropdownBlock {
+	display: inline-block;
+	margin-left: 10%;
+}
+
+input.DropdownBlock {
+	display: inline-block;
+	flex-basis: 50%;
+	margin-right: 7px;
+}
+
+.DropdownField {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0px 10px 0px;
+	max-height: 100%;
+}

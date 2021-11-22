@@ -1,0 +1,114 @@
+import { createPool, DatabasePoolType, sql } from 'slonik';
+import {
+	Building,
+	Code,
+	Floor,
+	FloorID,
+	RoomAddress,
+	RoomID,
+} from '../building';
+
+const { DATABASE_URL } = process.env;
+
+if (!DATABASE_URL) {
+	throw new Error('Missing env variable');
+}
+
+export class Pool {
+	static pool: DatabasePoolType | null = null;
+
+	static get = async () => {
+		if (!Pool.pool) {
+			const pool = createPool(DATABASE_URL || '');
+			Pool.pool = pool;
+		}
+
+		return Pool.pool;
+	};
+}
+
+export type ResolvedAddress = {
+	building_code: Code;
+	floor_id: FloorID;
+	room_id: RoomID;
+};
+
+export async function resolveRoomAddress(
+	addr: RoomAddress
+): Promise<ResolvedAddress | undefined> {
+	const pool = await Pool.get();
+
+	const [building_code, floor_code, room_number] = addr.split(' ');
+
+	if (building_code && floor_code && room_number) {
+		const qf = await pool.query(
+			sql`SELECT id FROM Floors WHERE building_code=${building_code} AND code=${floor_code}`
+		);
+
+		const floor_id: FloorID = qf.rows[0].id as number; //TODO: CHECK
+
+		const qr = await pool.query(
+			sql`SELECT id FROM Rooms WHERE floor_id=${floor_id} AND number=${room_number}`
+		);
+
+		const room_id: RoomID = qr.rows[0].id as number;
+
+		return {
+			building_code,
+			floor_id,
+			room_id,
+		};
+	} else {
+		return undefined;
+	}
+}
+
+export async function getBuildings(): Promise<Building | undefined> {
+	const pool = await Pool.get();
+	const buildings_res = await pool.many(sql`SELECT * FROM Buildings`);
+	const floors_res = await pool.many(sql`SELECT * FROM Floors`);
+
+	const floor_list = floors_res.map((f) => ({
+		code: f.code as string,
+		id: f.id as number,
+		building_code: f.building_code as string,
+	}));
+
+	return buildings_res.map((b) => {
+		const floors: Floor[] = floor_list.filter(
+			(f) => f.building_code === b.code
+		);
+
+		const building: Building = {
+			floors,
+			code: b.code as string,
+			name: b.name as string,
+		};
+
+		return building;
+	});
+}
+
+export async function getBuilding(code: Code): Promise<Building | undefined> {
+	const pool = await Pool.get();
+	const res = await pool.one(sql`SELECT * FROM Buildings WHERE code=${code}`);
+	const floors_res = await pool.many(
+		sql`SELECT * FROM Floors WHERE building_code=${code}`
+	);
+
+	if (res.rowCount == 1) {
+		const floors: Floor[] = floors_res.map((r) => ({
+			id: r.id as number,
+			building_code: code,
+			code: r.code as string,
+		}));
+
+		return {
+			name: res.name as string,
+			code,
+			floors,
+		};
+	} else {
+		return undefined;
+	}
+}

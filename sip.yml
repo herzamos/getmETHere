@@ -1,0 +1,24 @@
+ingress:
+  - name: http-default
+    subdomain: wickedthon
+    http:
+      - path: /
+        port: 3000
+
+env:
+  - name: 'SECRET'
+    secret:
+      key: key
+      create: random
+
+auth:
+  - name: oidc
+    accessType: confidential
+    clientProtocol: openid-connect
+    validRedirectURIs:
+      - https://wickedthon.svis.ethz.ch/*
+      - http://localhost:3000/*
+    scopes:
+      defaultClientScopes:
+        - profile
+    roles: []

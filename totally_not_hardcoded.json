@@ -1,0 +1,114 @@
+{
+	"CAB G": {
+		"floor_url": "CAB_G.svg",
+		"origin": {
+			"x": 17,
+			"y": 5
+		},
+		"width": 135,
+		"landmarks": [
+			{
+				"id": 1,
+				"type": "restroom",
+				"floor_address": "CAB G",
+				"position": {
+					"x": 4,
+					"y": 38
+				}
+			},
+			{
+				"id": 2,
+				"type": "restroom",
+				"floor_address": "CAB G",
+				"position": {
+					"x": 40,
+					"y": 5
+				}
+			},
+			{
+				"id": 3,
+				"type": "restroom",
+				"floor_address": "CAB G",
+				"position": {
+					"x": 38,
+					"y": 52
+				}
+			},
+			{
+				"id": 4,
+				"type": "printer",
+				"floor_address": "CAB G",
+				"position": {
+					"x": 13,
+					"y": 50
+				}
+			}
+		],
+		"rooms": [
+			{
+				"id": 1,
+				"number": "10",
+				"floor_address": "CAB G",
+				"position": {
+					"x": 45,
+					"y": 52
+				}
+			},
+			{
+				"id": 2,
+				"number": "11",
+				"floor_address": "CAB G",
+				"position": {
+					"x": 29,
+					"y": 44
+				}
+			},
+			{
+				"id": 3,
+				"number": "17",
+				"floor_address": "CAB G",
+				"position": {
+					"x": 13,
+					"y": 50
+				}
+			},
+			{
+				"id": 4,
+				"number": "20",
+				"floor_address": "CAB G",
+				"position": {
+					"x": 4,
+					"y": 38
+				}
+			},
+			{
+				"id": 5,
+				"number": "50",
+				"floor_address": "CAB G",
+				"position": {
+					"x": 40,
+					"y": 5
+				}
+			},
+			{
+				"id": 6,
+				"number": "52",
+				"floor_address": "CAB G",
+				"position": {
+					"x": 31,
+					"y": 5
+				}
+			}
+		]
+	},
+	"CAB H": {
+		"floor_url": "CAB_H.svg",
+		"origin": {
+			"x": 0,
+			"y": 0
+		},
+		"width": 50,
+		"landmarks": [],
+		"rooms": []
+	}
+}

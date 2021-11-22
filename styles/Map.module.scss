@@ -1,0 +1,148 @@
+@use 'variables';
+
+.container {
+	height: 100vh;
+	width: 100vw;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	display: grid;
+	grid-template-rows: 4em auto;
+	grid-template-areas:
+		'header'
+		'map';
+}
+
+.mapView {
+	width: 100vw;
+	grid-area: map;
+}
+
+.header {
+	grid-area: header;
+	padding: 0.5em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	display: grid;
+	grid-template-columns: 25% 75%;
+	grid-template-rows: 3em;
+	grid-template-areas: 'button logo';
+}
+
+.backButtonContainer {
+	grid-area: button;
+	align-self: center;
+}
+
+.LogoContainer {
+	// justify-self: end;
+	display: flex;
+	justify-content: flex-end;
+	grid-area: logo;
+}
+
+.button {
+	color: variables.$background;
+	border: none;
+	background-color: variables.$yellow;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: bold;
+	padding: 10px 10px 10px 10px;
+	border-radius: 5px;
+	font-size: 1em;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.backButton {
+	max-width: 40%;
+	max-height: 1em;
+}
+
+.info {
+
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-shadow: 0 0 15px black;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
+	padding: 1em;
+
+	background-color: variables.$button;
+	border-top-right-radius: 9px;
+
+	min-width: min(calc(100vw - 2em), 70vw);
+
+	display: grid;
+	grid-template-areas:
+		'title close'
+		'description report';
+}
+
+.infoTitle {
+	grid-area: title;
+	font-size: 1.25em;
+}
+
+.closeInfo {
+	grid-area: close;
+}
+
+.closeButton {
+	font-size: 1.5em;
+	text-align: right;
+}
+
+.Report {
+	grid-area: report;
+	// margin-right: 5em;
+	text-align: right;
+}
+
+.closeIcon {
+	color: variables.$yellow;
+}
+
+.OkMessage,
+.NoMessage {
+	font-size: 0.75em;
+	display: inline-block;
+	text-transform: capitalize;
+	vertical-align: middle;
+	margin-left: 0.5em;
+}
+
+.NoMessage {
+	color: variables.$error;
+}
+
+.OkMessage {
+	color: variables.$ok;
+}
+
+.AvailableDot,
+.UnavailableDot {
+	border-radius: 50%;
+	display: inline-block;
+	height: 0.75em;
+	width: 0.7em;
+}
+
+.AvailableDot {
+	background-color: variables.$ok;
+}
+
+.UnavailableDot {
+	background-color: variables.$error;
+}
+
+.Description {
+	grid-area: description;
+}

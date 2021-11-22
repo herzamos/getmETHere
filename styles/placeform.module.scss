@@ -1,0 +1,11 @@
+@use 'variables';
+
+.ErrorMessage {
+	font-weight: bold;
+	margin: 0.5em 0 0.5em 0;
+	color: variables.$error;
+}
+
+.button:hover {
+	cursor: pointer;
+}

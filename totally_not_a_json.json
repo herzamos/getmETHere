@@ -1,0 +1,791 @@
+{
+	"CAB": {
+		"E": {
+			"floor_url": "/CAB_E.svg",
+			"origin": {
+				"x": 4.966462285354519,
+				"y": 3.066959514018125
+			},
+			"width": 50,
+			"landmarks": [
+				{
+					"id": 1,
+					"type": "restroom",
+					"floor_address": "CAB E",
+					"position": {
+						"x": 1.7341276331761453,
+						"y": 21.05874943471717
+					},
+					"status": "in-service",
+					"note": "Men"
+				},
+				{
+					"id": 2,
+					"type": "restroom",
+					"floor_address": "CAB E",
+					"position": {
+						"x": 43.45579485584466,
+						"y": 21.060743582123752
+					},
+					"status": "in-service",
+					"note": "Men"
+				},
+				{
+					"id": 3,
+					"type": "restroom",
+					"floor_address": "CAB E",
+					"position": {
+						"x": 24.162589569457957,
+						"y": 1.7783281684708032
+					},
+					"status": "in-service",
+					"note": "Men"
+				},
+				{
+					"id": 4,
+					"type": "restroom",
+					"floor_address": "CAB E",
+					"position": {
+						"x": 1.826518680733952,
+						"y": 18.88958715339972
+					},
+					"status": "in-service",
+					"note": "Women"
+				},
+				{
+					"id": 5,
+					"type": "restroom",
+					"floor_address": "CAB E",
+					"position": {
+						"x": 21.245402923172364,
+						"y": 1.7783281684708032
+					},
+					"status": "in-service",
+					"note": "Women"
+				},
+				{
+					"id": 6,
+					"type": "restroom",
+					"floor_address": "CAB E",
+					"position": {
+						"x": 43.53128621450405,
+						"y": 19.016618239187498
+					},
+					"status": "in-service",
+					"note": "Women"
+				},
+				{
+					"id": 7,
+					"type": "printer",
+					"floor_address": "CAB E",
+					"position": {
+						"x": 38.915065384170035,
+						"y": 13.51656895262652
+					},
+					"status": "in-service",
+					"note": "Student Print Service"
+				},
+				{
+					"id": 8,
+					"type": "printer",
+					"floor_address": "CAB E",
+					"position": {
+						"x": 7.0756265688933375,
+						"y": 24.740263418721607
+					},
+					"status": "in-service",
+					"note": "Student Print Service"
+				},
+				{
+					"id": 9,
+					"type": "printer",
+					"floor_address": "CAB E",
+					"position": {
+						"x": 3.8799913389634852,
+						"y": 41.77066092456728
+					},
+					"status": "in-service",
+					"note": "Student Print Service"
+				},
+				{
+					"id": 10,
+					"type": "shower",
+					"floor_address": "CAB E",
+					"position": {
+						"x": 19.31149816014898,
+						"y": 2.1965309903052854
+					},
+					"status": "in-service",
+					"note": "Male"
+				},
+				{
+					"id": 11,
+					"type": "shower",
+					"floor_address": "CAB E",
+					"position": {
+						"x": 26.668838946029233,
+						"y": 2.322945780440685
+					},
+					"status": "in-service",
+					"note": "Female"
+				},
+				{
+					"id": 12,
+					"type": "coffee-machine",
+					"floor_address": "CAB E",
+					"position": {
+						"x": 7.0056440617060005,
+						"y": 17.212780322071488
+					},
+					"status": "in-service",
+					"note": "VIS / amiv / vmp"
+				}
+			],
+			"rooms": [
+				{
+					"id": 1,
+					"number": "13",
+					"floor_address": "CAB E",
+					"position": {
+						"x": 13.46689702875304,
+						"y": 25.753513613577415
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 2,
+					"number": "69",
+					"floor_address": "CAB E",
+					"position": {
+						"x": 42.656296872868396,
+						"y": 25.714542452236806
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 3,
+					"number": "53",
+					"floor_address": "CAB E",
+					"position": {
+						"x": 14.012493287521552,
+						"y": 3.5789228107714917
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 4,
+					"number": "57",
+					"floor_address": "CAB E",
+					"position": {
+						"x": 31.705400536157562,
+						"y": 3.7737786174745307
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 5,
+					"number": "41",
+					"floor_address": "CAB E",
+					"position": {
+						"x": 20.24787910201882,
+						"y": 19.206358508355276
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 6,
+					"number": "42",
+					"floor_address": "CAB E",
+					"position": {
+						"x": 25.23618775361664,
+						"y": 19.479156637739532
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 8,
+					"number": "33",
+					"floor_address": "CAB E",
+					"position": {
+						"x": 4.010850793477987,
+						"y": 11.712744331018293
+					},
+					"status": "free",
+					"note": ""
+				}
+			]
+		},
+		"F": {
+			"floor_url": "/CAB_F.svg",
+			"origin": {
+				"x": 5.312156834761354,
+				"y": 2.902741838932431
+			},
+			"width": 50,
+			"landmarks": [
+				{
+					"id": 1,
+					"type": "restroom",
+					"floor_address": "CAB F",
+					"position": {
+						"x": 0.09278876567268668,
+						"y": 14.150286765084829
+					},
+					"status": "in-service",
+					"note": "Men"
+				},
+				{
+					"id": 2,
+					"type": "restroom",
+					"floor_address": "CAB F",
+					"position": {
+						"x": 14.985385656139016,
+						"y": 0.8350988910541863
+					},
+					"status": "in-service",
+					"note": "Men"
+				},
+				{
+					"id": 3,
+					"type": "restroom",
+					"floor_address": "CAB F",
+					"position": {
+						"x": 32.61525113394962,
+						"y": 15.959667695702233
+					},
+					"status": "in-service",
+					"note": "Men"
+				},
+				{
+					"id": 4,
+					"type": "restroom",
+					"floor_address": "CAB F",
+					"position": {
+						"x": -0.04639438283634423,
+						"y": 15.959667695702233
+					},
+					"status": "in-service",
+					"note": "Women"
+				},
+				{
+					"id": 5,
+					"type": "restroom",
+					"floor_address": "CAB F",
+					"position": {
+						"x": 32.52246236827693,
+						"y": 14.243075530757515
+					},
+					"status": "in-service",
+					"note": "Women"
+				},
+				{
+					"id": 6,
+					"type": "restroom",
+					"floor_address": "CAB F",
+					"position": {
+						"x": 17.53707671213792,
+						"y": 0.788704508217843
+					},
+					"status": "in-service",
+					"note": "Women"
+				},
+				{
+					"id": 7,
+					"type": "studyplaces",
+					"floor_address": "CAB F",
+					"position": {
+						"x": 2.644479821671591,
+						"y": 8.536566441887242
+					},
+					"status": "in-service",
+					"note": ""
+				},
+				{
+					"id": 8,
+					"type": "legi-validation",
+					"floor_address": "CAB F",
+					"position": {
+						"x": 14.330637018520143,
+						"y": 15.580053391879414
+					},
+					"status": "in-service",
+					"note": ""
+				},
+				{
+					"id": 9,
+					"type": "studyplaces",
+					"floor_address": "CAB F",
+					"position": {
+						"x": 22.80091996966583,
+						"y": 1.5548381339330604
+					},
+					"status": "in-service",
+					"note": ""
+				}
+			],
+			"rooms": [
+				{
+					"id": 1,
+					"number": "16",
+					"floor_address": "CAB F",
+					"position": {
+						"x": 6.077664151561025,
+						"y": 15.495723867338796
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 2,
+					"number": "69",
+					"floor_address": "CAB F",
+					"position": {
+						"x": 32.197701688422526,
+						"y": 20.088767768136822
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 3,
+					"number": "11",
+					"floor_address": "CAB F",
+					"position": {
+						"x": 12.155328303122051,
+						"y": 19.995979002464132
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 4,
+					"number": "21",
+					"floor_address": "CAB F",
+					"position": {
+						"x": 2.644479821671591,
+						"y": 26.491192599552253
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 5,
+					"number": "78",
+					"floor_address": "CAB F",
+					"position": {
+						"x": 28.532545444351378,
+						"y": 31.919335391404463
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 6,
+					"number": "77",
+					"floor_address": "CAB F",
+					"position": {
+						"x": 30.991447734677593,
+						"y": 30.805870203332216
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 7,
+					"number": "79",
+					"floor_address": "CAB F",
+					"position": {
+						"x": 30.898658969004906,
+						"y": 32.476067985440594
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 8,
+					"number": "66",
+					"floor_address": "CAB F",
+					"position": {
+						"x": 26.212826302534193,
+						"y": 19.94958461962779
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 9,
+					"number": "14",
+					"floor_address": "CAB F",
+					"position": {
+						"x": 9.093299035923366,
+						"y": 15.588512633011483
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 10,
+					"number": "51.1",
+					"floor_address": "CAB F",
+					"position": {
+						"x": 5.845692237379306,
+						"y": 2.0877472276354663
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 11,
+					"number": "59",
+					"floor_address": "CAB F",
+					"position": {
+						"x": 26.769558896570317,
+						"y": 2.041352844799123
+					},
+					"status": "free",
+					"note": ""
+				}
+			]
+		},
+		"G": {
+			"floor_url": "/CAB_G.svg",
+			"origin": {
+				"x": 1.9775645207984203,
+				"y": 3.9851353810975505
+			},
+			"width": 50,
+			"landmarks": [
+				{
+					"id": 1,
+					"type": "printer",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 15.807907143354175,
+						"y": 2.708404993562038
+					},
+					"status": "in-service",
+					"note": "Student Print Service"
+				},
+				{
+					"id": 2,
+					"type": "restroom",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 19.69665141888847,
+						"y": 27.5211917689065
+					},
+					"status": "in-service",
+					"note": "Women"
+				},
+				{
+					"id": 3,
+					"type": "restroom",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 0.01519778267940275,
+						"y": 21.428434076646656
+					},
+					"status": "in-service",
+					"note": "Women"
+				},
+				{
+					"id": 4,
+					"type": "restroom",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 21.432164216077638,
+						"y": -0.4685678112932661
+					},
+					"status": "in-service",
+					"note": "Women"
+				},
+				{
+					"id": 5,
+					"type": "restroom",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 46.19169975908902,
+						"y": 21.41190283719429
+					},
+					"status": "out-of-order",
+					"note": "Women"
+				},
+				{
+					"id": 6,
+					"type": "restroom",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 26.304244634549335,
+						"y": 27.989914267849226
+					},
+					"status": "in-service",
+					"note": "Men"
+				},
+				{
+					"id": 7,
+					"type": "restroom",
+					"floor_address": "CAB G",
+					"position": {
+						"x": -0.33551437909114146,
+						"y": 18.688014942838397
+					},
+					"status": "in-service",
+					"note": "Men"
+				},
+				{
+					"id": 8,
+					"type": "restroom",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 24.98326484874898,
+						"y": -0.6863552489001328
+					},
+					"status": "in-service",
+					"note": "Men"
+				},
+				{
+					"id": 9,
+					"type": "restroom",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 46.36257865891995,
+						"y": 18.665985031328628
+					},
+					"status": "out-of-order",
+					"note": "Men"
+				},
+				{
+					"id": 10,
+					"type": "studyplaces",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 25.669546534619865,
+						"y": 11.516104225535312
+					},
+					"status": "in-service",
+					"note": ""
+				},
+				{
+					"id": 11,
+					"type": "coffee-machine",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 33.073662705026486,
+						"y": 3.018251163601362
+					},
+					"status": "in-service",
+					"note": ""
+				}
+			],
+			"rooms": [
+				{
+					"id": 1,
+					"number": "11",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 14.336490012488397,
+						"y": 22.96593380405332
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 2,
+					"number": "10.2",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 19.687319571041908,
+						"y": 20.928815951812137
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 3,
+					"number": "10.3",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 26.477712411845857,
+						"y": 20.684361809543194
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 4,
+					"number": "52",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 15.558760723833107,
+						"y": 0.6391221434899386
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 5,
+					"number": "51",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 10.886970449359993,
+						"y": 1.5626155698392754
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 6,
+					"number": "56",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 28.840769120445632,
+						"y": 0.8564147143956644
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 7,
+					"number": "57",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 33.39463115341316,
+						"y": 0.8187785749495875
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 8,
+					"number": "61",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 32.93908554597926,
+						"y": 23.060308290098163
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 9,
+					"number": "66",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 37.43224959119312,
+						"y": 26.430181324008558
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 10,
+					"number": "68",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 40.70000526043956,
+						"y": 26.430181324008558
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 11,
+					"number": "69.1",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 42.70831343216394,
+						"y": 27.519433213757374
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 12,
+					"number": "65",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 38.01091465762217,
+						"y": 20.64353065971798
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 13,
+					"number": "89",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 44.00180005124066,
+						"y": 2.0241311693241864
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 14,
+					"number": "88",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 43.8996826865767,
+						"y": 3.998400219493912
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 15,
+					"number": "17",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 5.103643458193106,
+						"y": 26.913541795142475
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 16,
+					"number": "15.2",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 8.52707914128516,
+						"y": 27.0099766031169
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 17,
+					"number": "34",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 5.1518608621803175,
+						"y": 12.592972810940502
+					},
+					"status": "free",
+					"note": ""
+				},
+				{
+					"id": 18,
+					"number": "38",
+					"floor_address": "CAB G",
+					"position": {
+						"x": 5.392947882116378,
+						"y": 5.64966663678197
+					},
+					"status": "free",
+					"note": ""
+				}
+			]
+		}
+	},
+	"HG": {},
+	"CHN": {},
+	"ML": {}
+}

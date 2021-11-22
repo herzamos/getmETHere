@@ -1,0 +1,85 @@
+@use 'variables';
+
+.Filter {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	backdrop-filter: blur(5px);
+	z-index: 10;
+	border: none;
+}
+
+.ReportWindow .closeButton {
+	grid-area: close;
+	text-align: right;
+}
+
+.Message {
+	font-family: inherit;
+	font-size: inherit;
+	grid-area: msg;
+	background-color: variables.$button;
+	color: variables.$text;
+	border: 10px solid variables.$button;
+  place-self: stretch;
+  resize: none;
+
+}
+
+.ReportWindow h2 {
+	margin-top: 0;
+	grid-area: title;
+	align-self: center;
+}
+
+.ReportWindow {
+	background-color: variables.$background;
+	display: grid;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 15px black;
+	padding: max(2%,15px);
+  padding-bottom: 0;
+	border-radius: 9px;
+	height: 80vh;
+	width: 80vw;
+  max-width: 25rem;
+  max-height: 25rem;
+  grid-template-rows: 20% 80%;
+	grid-template-areas:
+		'title close'
+		'form form';
+}
+
+.Form {
+	grid-area: form;
+	display: grid;
+  grid-template-rows: 80% 20%;
+	grid-template-areas:
+		'msg'
+		'button';
+}
+
+
+
+.ReportWindow .button {
+	grid-area: button;
+	color: variables.$background;
+	border: none;
+	background-color: variables.$yellow;
+	text-decoration: none;
+  place-self: center;
+	font-weight: bold;
+	border-radius: 5px;
+	font-size: 1em;
+	height: 2em;
+	width: 4em;
+}
+
+.ReportWindow .button:hover {
+	cursor: pointer;
+}
