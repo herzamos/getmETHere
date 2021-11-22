@@ -9,6 +9,6 @@ Check out my colleagues github repository:
 
 - [Alessandro Legnani](https://github.com/alegnani)
 - [Axel Montini](https://github.com/AxelMontini)
-- [Paolo Laffranchi
+- [Paolo Laffranchi](https://github.com/plaf2000)
 - [Alexander Schlieper](https://github.com/xsurus)
 
